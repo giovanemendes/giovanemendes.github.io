@@ -10,28 +10,32 @@
 <body>
     <div class="background-effect"></div> <!-- Efeito de fundo -->
     <header>
-       <nav>
-			<ul>
-				<li class="home-icon">
-					<a href="index.html">
-						<img src="vinnu.png" alt="Vinnu Logo" class="logo">
-					</a>
-				</li>
-				<li><a href="sobre.html">SOBRE</a></li>
-				<li><a href="servicos.html">SERVIÇOS</a></li>
-				<li><a href="contato.html">CONTATO</a></li>
-			</ul>
-		</nav>
+        <nav>
+            <div class="home-icon">
+                <a href="index.html"><img src="vinnu.png" alt="Logo" class="header-logo"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="contato.html" class="current-menu-item">CONTATO</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="contato-content page-content">
+    <main class="page-content">
+        <section class="contato-content">
             <div class="content-section">
                 <h2>Entre em Contato</h2>
-                <p>Estamos aqui para responder qualquer pergunta que você possa ter sobre nossos serviços.</p>
+                <p>Estamos prontos para ouvir suas necessidades e oferecer soluções personalizadas. Entre em contato conosco através dos seguintes canais:</p>
                 <ul>
-                    <li><i class="fas fa-envelope"></i> Email: contato@vinnu.com.br</li>                    
-                    <li><i class="fas fa-map-marker-alt"></i> Endereço:Recife, PE</li>
-                </ul>
+                    <li>Email: contato@vinnu.com.br</li>
+                    <li>Endereço: Recife - PE, Brasil</li>
+                </ul>                
             </div>
         </section>
     </main>
@@ -48,7 +52,6 @@
             <p>&copy; 2024 Vinnu. Todos os direitos reservados.</p>
         </div>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
 </html>
