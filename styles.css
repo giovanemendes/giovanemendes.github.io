@@ -341,3 +341,34 @@ footer {
     margin-bottom: 5px; /* Reduzindo a margem inferior */
 	text-align: left;
 }
+
+/* Media Query para telas menores */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li.home-icon {
+        position: absolute;
+        left: 5px;
+    }
+
+    header nav ul li.home-icon img.logo {
+        height: 30px;
+    }
+}
