@@ -269,7 +269,7 @@ footer {
 
 /* Estilos específicos para a página SOBRE */
 .sobre-content {
-    background-color: #1e1e1e;
+    background-color: #052B5D;
     color: #fff;
     padding: 40px; /* Reduzindo o padding para ajustar o espaçamento */
     text-align: center;
@@ -277,21 +277,24 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.sobre-content h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #61dafb; /* Cor personalizada para o título */
+.sobre-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+	margin-top: 10px;
+    color: #fff; /* Cor personalizada para o título */
+	text-align: left;
 }
 
 .sobre-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 10px; /* Reduzindo a margem inferior */
+    margin-bottom: 5px; /* Reduzindo a margem inferior */
+	text-align: left;
 }
 
 /* Estilos específicos para a página SERVIÇOS */
 .servicos-content {
-    background-color: #1e1e1e;
+    background-color: #052B5D;
     color: #fff;
     padding: 40px; /* Reduzindo o padding para ajustar o espaçamento */
     text-align: center;
@@ -299,21 +302,24 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.servicos-content h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #61dafb; /* Cor personalizada para o título */
+.servicos-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+	margin-top: 10px;
+    color: #fff; /* Cor personalizada para o título */
+	text-align: left;
 }
 
 .servicos-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 10px; /* Reduzindo a margem inferior */
+    margin-bottom: 5px; /* Reduzindo a margem inferior */
+	text-align: left;
 }
 
-/* Estilos específicos para a página CONTATO */
+/* Estilos específicos para a página CONTATOS */
 .contato-content {
-    background-color: #1e1e1e;
+    background-color: #052B5D;
     color: #fff;
     padding: 40px; /* Reduzindo o padding para ajustar o espaçamento */
     text-align: center;
@@ -321,19 +327,20 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.contato-content h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #61dafb; /* Cor personalizada para o título */
+.contato-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+	margin-top: 10px;
+    color: #fff; /* Cor personalizada para o título */
+	text-align: left;
 }
 
 .contato-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 10px; /* Reduzindo a margem inferior */
+    margin-bottom: 5px; /* Reduzindo a margem inferior */
+	text-align: left;
 }
-
-
 
 /* Media Query para telas menores */
 @media screen and (max-width: 768px) {
