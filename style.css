@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     height: 80vh;
     overflow: hidden;
+    color: #2e2e2e;
 }
 
 .hero-image {
@@ -63,15 +64,15 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: #fff;
+    color: #424242;
     padding: 0 20px;
 }
 
-.hero h1 {
+.hero .title {
     font-size: 5rem;
+    font-weight: 700;
     margin: 0;
     line-height: 1.2;
-    color: #052B5D;
 }
 
 .hero h2 {
@@ -79,8 +80,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem;
 }
 
-.hero p {
+.hero .body {
     font-size: 1.5rem;
+    font-weight: 400;
     margin: 10px 0;
     line-height: 1.6;
     color: #424242;
