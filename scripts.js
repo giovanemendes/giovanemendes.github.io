@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(changeHeroImage, 5000); // Reduzi para 5000 para testar mais rapidamente
 });
 
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    this.classList.toggle('active');
-    document.querySelector('nav ul').classList.toggle('active');
-});
+function toggleElement() {
+    const element = document.getElementById('navbarNav');
+    element.classList.toggle('show');
+}
 

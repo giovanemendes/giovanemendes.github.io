@@ -15,32 +15,53 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #052B5D;
 }
 
+.bg-secundario {
+    background-color: #233C5C;
+}
+
+.bg-terciario {
+    background-color: #EAEAEA;
+}
+
+.bg-destaque {
+    color: #F2B809;
+}
+
 .cor-principal {
     color: #052B5D;
 }
 
-.bg-secundario {
-    background-color: #DDDDE5;
+.cor-secundario {
+    color: #1D4B86;
+}
+
+.cor-destaque {
+    color: #F2B809;
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: #fff;
 }
 
 .header-logo {
     height: 40px;
 }
 
-.navbar-toggler-icon {
-    color: #fff;
+.navbar-toggler, .navbar-toggler-icon {
+    color: #fff !important;
 }
+
+.navbar-toggler:active {
+    border: none !important;
+}
+
 
 .hero {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     overflow: hidden;
     color: #2e2e2e;
 }
@@ -68,25 +89,55 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
 }
 
-.hero .title {
-    font-size: 5rem;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.2;
+@media screen and (min-width: 100px) {
+    .hero .hero-content .title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+        line-height: 1.2;
+    }
+
+    .hero .hero-content .body {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+    }
+
+    .hero .hero-content .cta .btn {
+        font-size: 1rem;
+    }
 }
 
-.hero h2 {
-    color: #424242;
-    font-size: 2.5rem;
-}
+@media screen and (min-width: 768px) {
+    .hero .hero-content .title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+        line-height: 1.2;
+    }
 
-.hero .body {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 10px 0;
-    line-height: 1.6;
-    color: #424242;
-}
+    .hero .hero-content .body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+    .hero .hero-content .title {
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+        line-height: 1.2;
+    }
+
+    .hero .hero-content .body {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+} 
+
 
 .scroll-margin {
     padding-top: 70px;
@@ -113,13 +164,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     transition: color 0.3s ease;
     text-decoration: none;
-    color: #424242;
+    color: #fff;
 }
 
 .rede-social:hover {
-    color: #052B5D;
+    color: #F2B809;
+    /* color: #052B5D; */
 }
 
-.rodape {
+#rodape {
     padding: 10px 0;
 }

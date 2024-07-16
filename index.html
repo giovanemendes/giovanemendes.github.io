@@ -1,57 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinnu - Início</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
-    <link rel="icon" href="icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Vinnu - Bem Vindo</title>
 </head>
+
 <body>
-    <div class="background-effect"></div> <!-- Efeito de fundo -->
-    <header>
-        <nav>
-            <div class="home-icon">
-                <a href="index.html"><img src="vinnu.png" alt="Logo" class="header-logo"></a>
-            </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul>
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <li><a href="servicos.html">SERVIÇOS</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <img src="inicio-01.jpg" alt="Descrição da Imagem" class="hero-image active">
-            <img src="inicio-02.jpg" alt="Descrição da Imagem" class="hero-image">
-            <div class="hero-content">
-                <h1>Bem-vindo à Vinnu</h1>
-                <p>Transformando ideias em soluções tecnológicas.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <p class="social-text">Redes Sociais</p>
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/company/vinnu/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/vinnutecnologia/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-            </ul>
+  <div class="container-fluid bg-principal topo">
+    <nav class="navbar navbar-expand-lg navbar-nav-scroll bg-principal fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="vinnu.png" alt="Logo" class="header-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a onclick="toggleElement()" class="nav-link active" aria-current="page" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="toggleElement()" class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="toggleElement()" class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
-        <div class="credits">
-            <p>&copy; 2024 Vinnu. Todos os direitos reservados.</p>
+      </div>
+    </nav>
+  </div>
+
+  <div id="inicio" class="hero scroll-margin mb-5">
+    <img src="imagens/imagem-01.jpeg" alt="Descrição da Imagem" class="hero-image active">
+    <img src="imagens/imagem-02.jpeg" alt="Descrição da Imagem" class="hero-image">
+    <div class="hero-content">
+
+      <!-- <p class="title mb-5">Transformamos <span class="cor-principal">ideias</span> <br> em <span -->
+      <p class="title">Transformamos <span class="cor-principal">ideias</span> <br> em <span
+          class="cor-principal">soluções</span> tecnológicas.</p>
+
+      <div class="body">
+      <!-- <div class="body mb-5"> -->
+        Que tal tirar aquela ideia do papel e transformá-la em processo moderno e estruturado? <br>
+        Entre em contato agora mesmo com nosso time de especialistas.
+      </div>
+
+      <!-- <div class="mt-5"> -->
+      <div class="cta">
+        <a class="btn btn btn-warning btn-lg" href="#contato"> &nbsp;&nbsp; <span>Falar com um especialista</span>
+          &nbsp;&nbsp; </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="servicos" class="container pt-5 mb-5">
+    <div class="mt-5">
+      <h2 class="text-center cor-principal mb-5">Conheça Nossos Serviços</h2>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="card border border-0">
+            <div class="card-title text-center">
+              <i class="fa-solid fa-laptop-code fa-4x mb-4 cor-secundario"></i>
+              <h4>Software Personalizado</h4>
+            </div>
+            <div class="card-body">
+              <p>Desenvolvemos soluções de software personalizadas para atender às necessidades específicas de cada
+                cliente,
+                utilizando as mais recentes tecnologias e práticas de desenvolvimento ágil.</p>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script src="scripts.js"></script>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="card border border-0">
+            <div class="card-title text-center">
+              <i class="fa-solid fa-network-wired fa-4x mb-4 cor-secundario"></i>
+              <h4>Integração de Sistemas</h4>
+            </div>
+            <div class="card-body">
+              <p>Realizamos a integração de sistemas para garantir a interoperabilidade e o fluxo eficiente de dados entre
+                diferentes plataformas e aplicações.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="card border border-0">
+            <div class="card-title text-center">
+              <i class="fa-solid fa-users-viewfinder fa-4x mb-4 cor-secundario"></i>
+              <h4>Consultoria em TI</h4>
+            </div>
+            <div class="card-body">
+              <p>Oferecemos consultoria especializada em tecnologia da informação para ajudar empresas a otimizar
+                processos,
+                reduzir custos e melhorar a eficiência operacional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="nossos-valores" class="container">
+
+    <!-- <h4 class="mt-5 mb-3">Nossa História</h4>
+    <p>
+      A Vinnu é resultado de quase duas décadas de experiência em desenvolvimento de software. Anos de experiência
+      e
+      dedicação estão
+      reunidos no desafio de tirar ideias do papel e entregar soluções tecnológicas de qualidade.
+    </p>
+
+    <h4 class="mt-5 mb-3">Nossos Valores</h4>
+    <div>
+      <li><strong>Inovação:</strong> Buscamos constantemente novas soluções e tecnologias.</li>
+      <li><strong>Qualidade:</strong> Compromisso com a excelência em tudo o que fazemos.</li>
+      <li><strong>Colaboração:</strong> Trabalhamos em equipe para alcançar os melhores resultados.</li>
+    </div> -->
+
+  </div>
+
+  <div id="contato" class="container-fluid pt-5 pb-5 bg-terciario">
+    <div class="container mt-5">
+      <h2 class="text-center cor-principal mb-5">Entre em Contato</h2>
+      <p class="lead text-center">
+        Estamos disponíveis para ouvir suas necessidades e colaborar com o seu crescimento. <br>
+        Entre em contato conosco através dos nossos canais:
+      </p>
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-5 col-sm-12 col-xs-12">
+
+          <div class="mt-3 mb-5 pt-3 text-center">
+            <i class="fa-brands fa-whatsapp fa-5x cor-secundario"></i>
+            <div class="">
+              <!-- <h5 class="card-title">(81) 99999-9999</h5> -->
+              <h5 class=""> <span class="text-body-tertiary">Em breve...</span> </h5>
+              <p class="">
+                Entre em contato via whatsapp no horário comercial: <br>
+                De Segunda à Sexta, das 08:00 às 18:00h.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-5 col-sm-12 col-xs-12">
+
+          <div class="mt-3 mb-5 pt-3 text-center">
+            <i class="fa-solid fa-envelope fa-5x cor-secundario"></i>
+            <div class="">
+              <h5 class="">contato@vinnu.com.br</h5>
+              <p class="">
+                Entre em contato via e-mail.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="rodape" class="container-fluid pt-5 text-white bg-secundario">
+    <div class="container mt-5">
+      <h2 class="text-center">Siga-nos nas redes sociais</h2>
+
+      <div class="mt-5 text-center">
+        <a class="rede-social" href="https://www.linkedin.com/company/vinnu/" target="_blank"><i
+            class="fab fa-linkedin fa-2x"></i></a>
+        <a class="rede-social" href="https://www.instagram.com/vinnutecnologia/" target="_blank"><i
+            class="fab fa-instagram fa-2x"></i></a>
+        <a class="rede-social" href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+      </div>
+
+      <div class="mt-5">
+        <i class="fa-solid fa-location-dot"></i> Recife - PE, Brasil
+      </div>
+
+      <div class="credits mt-5 mb-5">
+        <p>&copy; 2024 Vinnu. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
+
 </html>
